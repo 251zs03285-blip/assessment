@@ -44,4 +44,8 @@ const answers = [
   '95 凶です',
   '100 ファンブル… 大凶です'
 ];
-const answer = answers[Math.floor(Math.random() * answers.length)];
+function assessment(userName){
+  const index = Math.floor(Math.random() * answers.length);
+  let result = answers[index];
+  return result;
+}
